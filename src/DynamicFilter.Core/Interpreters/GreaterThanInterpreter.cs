@@ -12,7 +12,7 @@ namespace DynamicFilter.Core.Interpreters
 
         public override Expression CreateExpression(MemberExpression property, ConstantExpression constant)
         {
-            throw new NotImplementedException();
+            return Expression.GreaterThan(property, constant);
         }
     }
 }

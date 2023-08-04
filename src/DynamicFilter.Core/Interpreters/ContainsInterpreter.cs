@@ -10,9 +10,11 @@ namespace DynamicFilter.Core.Interpreters
         {
         }
 
-        internal override Expression CreateExpression(MemberExpression property, ConstantExpression constant)
+        public override Expression CreateExpression(MemberExpression property, ConstantExpression constant)
         {
-            throw new NotImplementedException();
+            var methodInfo = typeof(string).GetMethod(nameof(string.Contains), new Type[] { typeof(string) });
+
+            return Expression.Call(property, methodInfo, constant);
         }
     }
 }

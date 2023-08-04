@@ -10,7 +10,7 @@ namespace DynamicFilter.Core.Interpreters
         {
         }
 
-        internal override Expression CreateExpression(MemberExpression property, ConstantExpression constant)
+        public override Expression CreateExpression(MemberExpression property, ConstantExpression constant)
         {
             throw new NotImplementedException();
         }

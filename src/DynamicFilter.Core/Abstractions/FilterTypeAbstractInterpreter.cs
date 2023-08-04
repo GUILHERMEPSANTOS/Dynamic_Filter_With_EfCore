@@ -26,6 +26,6 @@ namespace DynamicFilter.Core.Abstractions
             return Expression.Lambda<Func<TFilteredClass, bool>>(expression, parameter);
         }
 
-        internal abstract Expression CreateExpression(MemberExpression property, ConstantExpression constant);
+        public abstract Expression CreateExpression(MemberExpression property, ConstantExpression constant);
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using DynamicFilter.Core.DependencyInjection;
 using WebApp.Data.Context;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDynamicFilter();
 
 builder.Services
     .AddDbContext<ApplicationDbContext>(

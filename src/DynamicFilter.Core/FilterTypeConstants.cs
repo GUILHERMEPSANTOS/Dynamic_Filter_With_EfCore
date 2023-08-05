@@ -6,6 +6,6 @@ namespace DynamicFilter.Core
         public const string Contains = "contains";
         public const string StartsWith = "startsWith";
         public const string GreaterThan = "greaterThan";
-        public const string LessThan = "lessThen";
+        public const string LessThan = "lessThan";
     }
 }

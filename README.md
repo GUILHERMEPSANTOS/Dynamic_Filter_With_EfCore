@@ -76,7 +76,8 @@ Este projeto demonstra o uso poderoso das Expression Trees em conjunto com o pad
 ]
 ```
 
-**Como rodar:**
+## **Como rodar:**
+
   **:whale: Obs: É considerado que você tenha o Docker instalado previamente.**
 
   Entre neste diretório [docker](./docker) e rode o comando:

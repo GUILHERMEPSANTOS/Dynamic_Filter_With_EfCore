@@ -10,7 +10,6 @@ Este projeto demonstra o uso poderoso das Expression Trees em conjunto com o pad
 
 **:raccoon: 2. Padrão Interpreter:**
 - Implementamos o padrão Interpreter para interpretar as árvores de expressão.
-- O padrão permite avaliar e traduzir as árvores em consultas SQL.
 
 **:fire: 3. Filtro Dinâmico:**
 

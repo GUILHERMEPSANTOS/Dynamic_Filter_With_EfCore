@@ -2,7 +2,7 @@
 
 Este projeto demonstra o uso poderoso das Expression Trees em conjunto com o padrão de design Interpreter para criar filtros dinâmicos no Entity Framework Core. Combinando essas duas abordagens, você pode criar consultas flexíveis.
 
-**`Caso este projeto seja útil, por favor, dê uma start ⭐.`**
+**`Caso este projeto seja útil, por favor, dê uma start ⭐`**
 
 ### Como Funciona
  **:deciduous_tree: 1. Expression Trees:**

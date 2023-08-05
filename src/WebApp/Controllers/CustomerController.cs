@@ -1,7 +1,4 @@
-using System;
-using System.Linq;
 using DynamicFilter.Core;
-using DynamicFilter.Core.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Data.Context;

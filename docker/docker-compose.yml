@@ -1,0 +1,33 @@
+version: "3.8"
+
+networks:
+  dynamic_filter_network:
+
+services: 
+  webApp_dynamic_filter:
+    image: dynamic_filter:latest
+    container_name: web_app_dynamic_filter
+    build: 
+      context: ../src
+      dockerfile: ./WebApp/Dockerfile
+    environment: 
+      ASPNETCORE_URLS: http://+:5280
+      ASPNETCORE_ENVIRONMENT: Development
+    ports:
+      - "5280:5280"
+    networks:
+      - dynamic_filter_network
+    depends_on:
+      - sql_server
+
+  sql_server:
+    image: sql-server:latest
+    container_name: sql-server
+    build: 
+     context: ../sql
+     dockerfile: ./Dockerfile
+    environment:
+      SA_PASSWORD: "MeuDB@123"
+      ACCEPT_EULA: "Y"
+    networks:
+     - dynamic_filter_network

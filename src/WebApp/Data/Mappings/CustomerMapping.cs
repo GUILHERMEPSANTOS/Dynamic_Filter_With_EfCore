@@ -1,4 +1,3 @@
-using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using WebApp.Domain;
@@ -27,6 +26,15 @@ namespace WebApp.Data.Mappings
 
             builder.Property(customer => customer.Active)
                 .HasDefaultValue(true);
+
+            builder.HasData(
+                new Customer("Guilherme", "guilherme@hotmail.com", true, DateTime.UtcNow.AddYears(-3), DateTime.UtcNow.AddYears(-18)),
+                new Customer("Ana", "ana123@gmail.com", true, DateTime.UtcNow.AddYears(-2), DateTime.UtcNow.AddYears(-17)),
+                new Customer("Carlos", "carlos45@yahoo.com", true, DateTime.UtcNow.AddYears(-4), DateTime.UtcNow.AddYears(-19)),
+                new Customer("Maria", "maria87@hotmail.com", true, DateTime.UtcNow.AddYears(-1), DateTime.UtcNow.AddYears(-16)),
+                new Customer("Rafael", "rafael.mtz@gmail.com", true, DateTime.UtcNow.AddYears(-5), DateTime.UtcNow.AddYears(-20))
+            );
+
         }
     }
 }

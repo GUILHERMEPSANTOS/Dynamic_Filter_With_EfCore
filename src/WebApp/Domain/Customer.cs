@@ -5,7 +5,7 @@ namespace WebApp.Domain
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public string Active { get; set; }
+        public bool Active { get; set; }
         public DateTime RegistrationDate { get; set; }
         public DateTime DateOfBirth { get; set; }
         
@@ -13,7 +13,7 @@ namespace WebApp.Domain
         {
         }
 
-        public Customer(int id, string name, string email, string active, DateTime registrationDate, DateTime dateOfBirth)
+        public Customer(string name, string email, bool active, DateTime registrationDate, DateTime dateOfBirth)
         {
             Id = Guid.NewGuid();
             Name = name;
